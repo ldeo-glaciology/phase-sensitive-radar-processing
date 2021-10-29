@@ -1,0 +1,17 @@
+function vdat = fmcw_burst_cut_voltage(vdat, istart, iend)
+
+% creates a function that chops data by istart, iend to prevent false
+% signal from voltage cut offs
+
+    vdat.vif = vdat.vif(:,istart:iend); % remove last sample
+    disp('Cropping data to healthy fraction of signal')
+    vdat.processing = {[mfilename ': cropped chirps to ' int2str(n-1) ' %d to ' int2str(istart) '%d' int2str(iend)]};
+    vdat = fmcw_derive_parameters(vdat);
+    vdat.NSamples = iend-istart;
+    
+    vdat.t = vdat.t(istart:iend);
+    vdat.f = vdat.f(istart:iend);
+    
+    vdat = fmcw_burst_make_length_odd(vdat); 
+    
+end
