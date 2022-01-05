@@ -21,7 +21,7 @@ if nargin >2
     % overwrite defaults
     fieldnames = fields(cfgi);
     fieldlist = [];
-    for ii = 1:length(fieldnames);
+    for ii = 1:length(fieldnames)
         thisfield = fieldnames{ii};
         cfg = setfield(cfg,thisfield,getfield(cfgi,thisfield));
         fieldlist = [fieldlist ', ' thisfield];
