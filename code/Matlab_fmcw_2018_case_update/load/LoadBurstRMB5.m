@@ -8,13 +8,13 @@ function vdat = LoadBurstRMB5(Filename, Burst, SamplesPerChirp)
     % code
     %
 
-MaxHeaderLen = 1200; %ELIZ changed from ELIZ (2000 on 4/17/18) to 1200 on 8/20/18
+MaxHeaderLen = 2000; 
 
 burstpointer = 0;
 vdat.Code = 0; % nothing's wrong yet 
-filename = '/Users/elizabeth/Documents/home_research/projects/juneau_icefield/divide/grid/first/2018-07-25_REP080.dat';
-Burst = 1;
-SamplesPerChirp = 40001;
+filename = Filename;
+Burst = Burst;
+SamplesPerChirp = SamplesPerChirp;
 fid = fopen(filename,'r');
 
 

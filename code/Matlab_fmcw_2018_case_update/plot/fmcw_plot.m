@@ -61,8 +61,7 @@ function data = fmcw_plot(plotop,varargin)
 %% Settings
 maxbursts = 1; % per file
 maxchirps = 100; % per burst
-maxrangedefault = 1000; % default range to crop data to (m) (was 800, changed to 1500 - jk, 07/24/18
-%maxrangedefault=2000;
+maxrangedefault = 1000;
 p = 2; % padfactor;
 defaultplotop = 'a';
 

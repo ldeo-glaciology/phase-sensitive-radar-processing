@@ -31,8 +31,8 @@ if nargin < 2
 end
 
 % Settings
-SamplesPerChirp = 40000; %SHOULD THIS BE 40001?
-doShowFileType = 0;
+SamplesPerChirp = 40000; 
+doShowFileType = 1;
 
 %% Load data and reshape array
 [~,~,ext] = fileparts(filename);
