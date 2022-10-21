@@ -204,7 +204,7 @@ class DataFileObject:
         if  not ("ER_ICE" in Burst.Header):
             Burst.Header["ER_ICE"] = 3.18
         Burst.Header["CentreFreq"] = (Burst.Header["StartFreq"] + Burst.Header["StopFreq"])/2
-        Burst.Header["B"] = (Burst.Header["StopFreq"] + Burst.Header["StartFreq"])
+        Burst.Header["B"] = (Burst.Header["StopFreq"] - Burst.Header["StartFreq"])
         
         # deal out attenuator settings to the chirps
         setting_counter = 0
