@@ -86,6 +86,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 import warnings
+import copy
 class DataFileObject:
     
     def __init__(self, Filename):
@@ -232,7 +233,7 @@ class BurstObject:
     def ExtractChirp(self, ChirpList):
         Chirp = ChirpObject()
         Chirp.t = np.array(range(self.Header["N_ADC_SAMPLES"])) * self.Header["dt"]
-        Chirp.Header = self.Header
+        Chirp.Header = copy.deepcopy(self.Header)  # we dont want chirp-specific new entries in the chirp.header updating the burst.header
         Chirp.ChirpList = ChirpList
         
         Chirp.Header['Attenuator1_thisChirp'] = [self.Header['Attenuator1_allChirps'][i] for i in ChirpList]
