@@ -175,7 +175,7 @@ class DataFileObject:
             inbuff = datafile.read(NsamplesInBurst * 4)
             Burst.v = np.frombuffer(inbuff, dtype=np.uint32)
         else:
-            NsamplesInBurst = Burst.Header["N_ADC_SAMPLES"] * Burst.Header["NSubBursts"]
+            NsamplesInBurst = Burst.Header["N_ADC_SAMPLES"] * Burst.Header["NSubBursts"] *  Burst.Header["nAttenuators"]
             inbuff = datafile.read(NsamplesInBurst * 2)
             Burst.v = (np.frombuffer(inbuff, dtype=np.uint16))/2**16*2.5-1.25
         datafile.close()
@@ -231,6 +231,8 @@ class BurstObject:
                     no += 1
                     chirpoffset = ind * self.Header["N_ADC_SAMPLES"]
                     Chirp.vdat = Chirp.vdat + self.v[chirpoffset:chirpoffset + self.Header["N_ADC_SAMPLES"]]
+                else:
+                    print('chirp index > number of chirps.')
             Chirp.vdat = Chirp.vdat/no
 
         return(Chirp)
