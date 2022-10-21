@@ -85,6 +85,7 @@ Instance variables:
 import numpy as np
 import matplotlib.pyplot as plt
 import math
+import warnings
 class DataFileObject:
     
     def __init__(self, Filename):
@@ -204,6 +205,20 @@ class DataFileObject:
         Burst.Header["CentreFreq"] = (Burst.Header["StartFreq"] + Burst.Header["StopFreq"])/2
         Burst.Header["B"] = (Burst.Header["StopFreq"] + Burst.Header["StartFreq"])
         
+        # deal out attenuator settings to the chirps
+        setting_counter = 0
+        Burst.Header['Attenuator1_allChirps'] = []
+        Burst.Header['AFGain_allChirps'] =[]
+        for chirp in range(Burst.Header['NChirps']):
+            Burst.Header['Attenuator1_allChirps'].append(Burst.Header['Attenuator1'][setting_counter])
+            Burst.Header['AFGain_allChirps'].append(Burst.Header['AFGain'][setting_counter])
+            
+            # keep track of which setting to use
+            setting_counter += 1
+            if setting_counter >= Burst.Header['nAttenuators']: # if the counter reaches nAttenuators, reset it to zero 
+                setting_counter = 0
+
+
         return(Burst)
         
 class BurstObject:
@@ -219,6 +234,15 @@ class BurstObject:
         Chirp.t = np.array(range(self.Header["N_ADC_SAMPLES"])) * self.Header["dt"]
         Chirp.Header = self.Header
         Chirp.ChirpList = ChirpList
+        
+        Chirp.Header['Attenuator1_thisChirp'] = [self.Header['Attenuator1_allChirps'][i] for i in ChirpList]
+        Chirp.Header['AFGain_thisChirp'] = [self.Header['AFGain_allChirps'][i] for i in ChirpList]
+
+        if any(i != Chirp.Header['Attenuator1_thisChirp'][0] for i in Chirp.Header['Attenuator1_thisChirp'])\
+            or any(i != Chirp.Header['AFGain_thisChirp'][0] for i in Chirp.Header['AFGain_thisChirp']):
+            warnings.warn('This is stacking over chirps with different attenuator settings.')
+
+
         if self.Header["Average"] == 1:
             Chirp.vdat = self.v          
         elif self.Header["Average"] == 2:
