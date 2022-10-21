@@ -288,7 +288,7 @@ class ChirpObject:
         plt.grid("on")
         return(0)
 
-    def FormProfile(self, F0, F1, pad, ref):
+    def FormProfile(self, F0=200000000, F1=400000000, pad=2, ref=1):
         Profile = ProfileObject()
         if self.Header["StartFreq"] > F0:
             F0 = self.Header["StartFreq"]
