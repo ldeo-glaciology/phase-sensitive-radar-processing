@@ -82,6 +82,7 @@ Instance variables:
     rad2m:     radians to metres of range conversion factor
     bin2m:     bin to metres of range conversion factor
 """
+import gcsfs
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -92,9 +93,19 @@ class DataFileObject:
     def __init__(self, Filename):
         self.BurstLocationList = []
         self.Filename = Filename
-        datafile = open(self.Filename, "rb")
+
+        if isinstance(self.Filename,gcsfs.core.GCSFile):
+            datafile =  copy.deepcopy(self.Filename)
+            self.local_or_remote = "remote"
+        elif isinstance(self.Filename,str):
+            datafile = open(self.Filename, "rb")
+            self.local_or_remote = "local"
+        else:
+            raise Exception(f"input has to have type str or gcsfs.core.GCSFile, but it is a {type(Filename)}.")
+        
         inbuff = datafile.read()
-        datafile.close()
+        datafile.close()     
+        
         a = "*** Burst Header ***"
         b = a.encode()
         locn = inbuff.find(b)
@@ -109,7 +120,12 @@ class DataFileObject:
         Burst.Filename = self.Filename
         Burst.BurstNo = BurstNo
         Burst.Header = {"BurstNo":BurstNo}
-        datafile = open(self.Filename,"rb")
+        
+        if self.local_or_remote == "remote":
+            datafile = copy.deepcopy(self.Filename)
+        elif self.local_or_remote == "local":
+            datafile = open(self.Filename,"rb")
+        
         datafile.seek(self.BurstLocationList[BurstNo])
         inbuff = datafile.read(2000)
         locn = 0
@@ -165,7 +181,12 @@ class DataFileObject:
             inline = inbuff[locn:locn1].decode()
 
         # Re-open the file for binary read to get burst data
-        datafile = open(self.Filename,"rb")
+        
+        if self.local_or_remote == "remote":
+            datafile = copy.deepcopy(self.Filename)
+        elif self.local_or_remote == "local":
+            datafile = open(self.Filename,"rb")        
+        
         datafile.seek(self.BurstLocationList[BurstNo] + locn1 + 2)
         NsamplesInBurst = Burst.Header["N_ADC_SAMPLES"] * Burst.Header["NSubBursts"]
         if Burst.Header["Average"] == 1:
