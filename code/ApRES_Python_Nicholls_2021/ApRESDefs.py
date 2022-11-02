@@ -90,19 +90,19 @@ import warnings
 import copy
 class DataFileObject:
     
-    def __init__(self, Filename):
+    def __init__(self, Filename, remote_load=False):
         self.BurstLocationList = []
         self.Filename = Filename
-
-        if isinstance(self.Filename,gcsfs.core.GCSFile):
-            datafile =  copy.deepcopy(self.Filename)
-            self.local_or_remote = "remote"
-        elif isinstance(self.Filename,str):
-            datafile = open(self.Filename, "rb")
-            self.local_or_remote = "local"
-        else:
-            raise Exception(f"input has to have type str or gcsfs.core.GCSFile, but it is a {type(Filename)}.")
+        self.remote_load = remote_load
         
+
+        if remote_load:
+            fs = gcsfs.GCSFileSystem()
+            datafile = fs.open(self.Filename, mode = 'rb')
+        else: 
+            datafile = open(self.Filename, "rb")
+            
+
         inbuff = datafile.read()
         datafile.close()     
         
@@ -121,10 +121,12 @@ class DataFileObject:
         Burst.BurstNo = BurstNo
         Burst.Header = {"BurstNo":BurstNo}
         
-        if self.local_or_remote == "remote":
-            datafile = copy.deepcopy(self.Filename)
-        elif self.local_or_remote == "local":
-            datafile = open(self.Filename,"rb")
+        if self.remote_load:
+            fs = gcsfs.GCSFileSystem()
+            datafile = fs.open(self.Filename, mode = 'rb')
+        else: 
+            datafile = open(self.Filename, "rb")
+ 
         
         datafile.seek(self.BurstLocationList[BurstNo])
         inbuff = datafile.read(2000)
@@ -182,10 +184,11 @@ class DataFileObject:
 
         # Re-open the file for binary read to get burst data
         
-        if self.local_or_remote == "remote":
-            datafile = copy.deepcopy(self.Filename)
-        elif self.local_or_remote == "local":
-            datafile = open(self.Filename,"rb")        
+        if self.remote_load:
+            fs = gcsfs.GCSFileSystem()
+            datafile = fs.open(self.Filename, mode = 'rb')
+        else: 
+            datafile = open(self.Filename, "rb")      
         
         datafile.seek(self.BurstLocationList[BurstNo] + locn1 + 2)
         NsamplesInBurst = Burst.Header["N_ADC_SAMPLES"] * Burst.Header["NSubBursts"]
