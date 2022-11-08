@@ -1,0 +1,14 @@
+DEBUG 2022-11-06 22:06:12 (157864) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/1919230399.py Ftry_logging L252 - debugging something
+INFO 2022-11-06 22:06:12 (157870) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/1919230399.py Ftry_logging L253 - some message
+ERROR 2022-11-06 22:06:12 (157876) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/1919230399.py Ftry_logging L254 - something went wrong
+DEBUG 2022-11-06 22:06:34 (180060) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/4243135650.py Ftry_logging L250 - debugging something
+DEBUG 2022-11-06 22:06:34 (180060) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/4243135650.py Ftry_logging L250 - debugging something
+INFO 2022-11-06 22:06:34 (180073) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/4243135650.py Ftry_logging L251 - some message
+INFO 2022-11-06 22:06:34 (180073) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/4243135650.py Ftry_logging L251 - some message
+ERROR 2022-11-06 22:06:34 (180081) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/4243135650.py Ftry_logging L252 - something went wrong
+ERROR 2022-11-06 22:06:34 (180081) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/4243135650.py Ftry_logging L252 - something went wrong
+ERROR 2022-11-06 22:07:46 (251320) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/3102799146.py Ftry_logging L252 - something went wrong
+ERROR 2022-11-06 22:07:46 (251320) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/3102799146.py Ftry_logging L252 - something went wrong
+ERROR 2022-11-06 22:07:46 (251320) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40588/3102799146.py Ftry_logging L252 - something went wrong
+ERROR 2022-11-06 22:10:37 (65139) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40703/163213620.py Ftry_logging L252 - something went wrong
+ERROR 2022-11-06 22:10:57 (85084) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_40703/1588303782.py Ftry_logging L252 - something went wrong

@@ -1,0 +1,40 @@
+INFO 2022-11-07 10:29:29 (88894) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4124991064.py F_setup_logging L250 - Logging level set to DEBUG
+DEBUG 2022-11-07 10:29:30 (88958) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4124991064.py F_try_logging L257 - debugging something
+INFO 2022-11-07 10:29:30 (88971) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4124991064.py F_try_logging L258 - some message
+ERROR 2022-11-07 10:29:30 (88981) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4124991064.py F_try_logging L259 - something went wrong
+INFO 2022-11-07 10:31:00 (179613) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_setup_logging L251 - Logging level set to DEBUG
+INFO 2022-11-07 10:31:00 (179613) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_setup_logging L251 - Logging level set to DEBUG
+DEBUG 2022-11-07 10:31:00 (179628) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_try_logging L258 - debugging something
+DEBUG 2022-11-07 10:31:00 (179628) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_try_logging L258 - debugging something
+INFO 2022-11-07 10:31:00 (179641) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_try_logging L259 - some message
+INFO 2022-11-07 10:31:00 (179641) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_try_logging L259 - some message
+ERROR 2022-11-07 10:31:00 (179654) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_try_logging L260 - something went wrong
+ERROR 2022-11-07 10:31:00 (179654) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_try_logging L260 - something went wrong
+INFO 2022-11-07 10:31:05 (184419) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_setup_logging L251 - Logging level set to DEBUG
+INFO 2022-11-07 10:31:05 (184419) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_setup_logging L251 - Logging level set to DEBUG
+INFO 2022-11-07 10:31:05 (184419) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/4172396662.py F_setup_logging L251 - Logging level set to DEBUG
+INFO 2022-11-07 10:51:31 (1410781) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L239 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:51:31 (1410781) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L239 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:51:31 (1410781) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L239 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:51:32 (1410934) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:51:32 (1410934) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:51:32 (1410934) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:51:32 (1410934) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_41795/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:51:59 (13343) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:52:04 (18519) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2180807181.py F_setup_logging L239 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:52:04 (18528) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:52:04 (18528) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2180807181.py F_setup_logging L253 - Logging level set to DEBUG
+INFO 2022-11-07 10:53:39 (113369) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1635156718.py F_setup_logging L243 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:53:39 (113369) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1635156718.py F_setup_logging L243 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:53:39 (113379) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1635156718.py F_setup_logging L257 - Logging level set to DEBUG
+INFO 2022-11-07 10:53:39 (113379) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1635156718.py F_setup_logging L257 - Logging level set to DEBUG
+INFO 2022-11-07 10:53:39 (113379) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1635156718.py F_setup_logging L257 - Logging level set to DEBUG
+INFO 2022-11-07 10:55:47 (241425) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L242 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:55:47 (241425) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L242 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:55:47 (241425) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L242 - New StreamHandler handler not found in the list of handlers (self.logger.handlers), so it is added to self.handler.
+INFO 2022-11-07 10:55:47 (241435) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L256 - Logging level set to DEBUG
+INFO 2022-11-07 10:55:47 (241435) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L256 - Logging level set to DEBUG
+INFO 2022-11-07 10:55:47 (241435) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L256 - Logging level set to DEBUG
+INFO 2022-11-07 10:55:47 (241435) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/2266352556.py F_setup_logging L256 - Logging level set to DEBUG
+INFO 2022-11-07 11:17:25 (1538873) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1511010609.py F_setup_logging L260 - Logging level set to DEBUG
+INFO 2022-11-07 11:17:29 (1543143) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_42206/1511010609.py F_setup_logging L260 - Logging level set to DEBUG
