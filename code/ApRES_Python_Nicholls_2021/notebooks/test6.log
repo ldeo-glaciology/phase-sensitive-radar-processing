@@ -231,3 +231,11 @@ DEBUG 2022-11-07 22:42:03 (21182430) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0
 DEBUG 2022-11-07 22:42:04 (21182462) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/592250140.py Fload_all L112 - Contatenating all the multi-burst xarrays.
 DEBUG 2022-11-07 22:42:04 (21182480) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/592250140.py F_add_attrs L256 - _add_attrs currently doesnt do anything, but it should add long_name, units, and provenance information to the data variables and coordinates in the final xapres
 DEBUG 2022-11-07 22:42:04 (21182482) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/592250140.py Fload_all L119 - Finish call to load_all. Call xapres.data to see the xarray this produced.
+DEBUG 2022-11-07 22:50:54 (21713257) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py F_setup_logging L294 - File logging level set to DEBUG
+DEBUG 2022-11-07 22:50:54 (21713344) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Flist_files L57 - Find all the dat files in the directory gs://ldeo-glaciology/GL_apres_2022/A101 with remote_load = True
+DEBUG 2022-11-07 22:50:55 (21713606) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Flist_files L71 - Finish call to list_files. Found 127 files
+DEBUG 2022-11-07 22:50:55 (21713626) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Fload_single L34 - Load dat file ldeo-glaciology/GL_apres_2022/A101/CardA/DIR2022-05-22-1939/DATA2022-05-22-1939.DAT with remote_load = True
+DEBUG 2022-11-07 22:51:12 (21731021) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Fload_single L36 - Extract burst number 0
+DEBUG 2022-11-07 22:51:18 (21737068) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Fload_single L38 - Extract chirp number 0
+DEBUG 2022-11-07 22:51:18 (21737079) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Fload_single L40 - Form profile for chirp number 0
+DEBUG 2022-11-07 22:51:18 (21737138) 	 /var/folders/gc/hfy654314d3gzj39h27fdx0r0000gn/T/ipykernel_44391/3601821916.py Fload_single L42 - Finish call to load_single.
